@@ -13,3 +13,23 @@
         white-space: pre-wrap   
     }
 }
+
+code {
+    color: $secondaryColor;
+
+    .codeComment {
+
+    }
+
+    .codeConst {
+        color: $codeVariable;
+    }
+
+    .codeString {
+        color: $codeString;
+    }
+
+    .codeNumber {
+        color: $codeNumber;
+    }
+}
