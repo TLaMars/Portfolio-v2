@@ -6,8 +6,8 @@ export default function Header() {
     return (
         <div className={style.header}>
             <div className={style.header__left}>
-                <h1>Hi!, I am <span>Thomas</span>,</h1>
-                <h3>A 21 year old front-end and back-end developer from The Netherlands.</h3>
+                <h1>Hi!, I am <span className={style.green}>Thomas</span>,</h1>
+                <h3>A 21 year old <span className={style.green}>front-end</span> and <span className={style.green}>back-end</span> developer from The Netherlands.</h3>
             </div>
             <div className={style.header__right}>
                 <CodeBlock />

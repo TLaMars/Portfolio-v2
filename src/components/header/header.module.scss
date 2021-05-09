@@ -4,12 +4,22 @@
     @apply mx-auto;
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 650px;
+
+    @screen md {
+        flex-direction: row;
+        height: 800px;
+    }
+
+    @screen lg {
+        @apply container;
+    }
     
     &__left {
-        padding-top: 320px;
+        padding-top: 260px;
 
         @screen md {
+            padding-top: 320px;
             width: 40%;
         }
     }
@@ -32,14 +42,6 @@
         }
     }
 
-    @screen md {
-        flex-direction: row;
-    }
-
-    @screen lg {
-        @apply container;
-    }
-
     h1 {
         @apply text-4xl;
         @apply font-extrabold;
@@ -54,6 +56,10 @@
         @apply text-2xl;
         @apply font-bold;
         width: 320px;
+    }
+
+    .green {
+        color: $primaryColor;
     }
 }
 
