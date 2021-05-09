@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./variables.scss";
+
+html, body {
+    background: $bgPrimaryColor;
+    color: $textWhite;
+}
