@@ -1,0 +1,72 @@
+@import '../../assets/scss/variables.scss';
+
+.header {
+    @apply mx-auto;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    
+    &__left {
+        padding-top: 320px;
+
+        @screen md {
+            width: 40%;
+        }
+    }
+
+    &__right {
+        display: none;
+
+        @screen md {
+            padding-top: 200px;
+            display: block;
+            width: 60%;
+        }
+    }
+
+    &__right, &__left {
+        @apply px-6;
+
+        @screen lg {
+            width: 50%;
+        }
+    }
+
+    @screen md {
+        flex-direction: row;
+    }
+
+    @screen lg {
+        @apply container;
+    }
+
+    h1 {
+        @apply text-4xl;
+        @apply font-extrabold;
+        @apply mb-5;
+
+        @screen md {
+            @apply text-5xl;
+        }
+    }
+
+    h3 {
+        @apply text-2xl;
+        @apply font-bold;
+        width: 320px;
+    }
+
+    span {
+        color: $primaryColor;
+    }
+}
+
+.codeBlocks {
+    &__floater {
+        @screen md {
+            top: -35px;
+            position: relative;
+            left: 100px;
+        }
+    }
+}

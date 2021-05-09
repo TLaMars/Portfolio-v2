@@ -1,0 +1,15 @@
+@import "../../assets/scss/variables.scss";
+
+.codeBlock {
+    background: linear-gradient(40deg, $bgPrimaryColor 5%, $bgSecondaryColor 95%);
+    border-radius: 5px;
+    width: 77%;
+    max-width: 100%;
+
+    @apply p-5;
+
+    code {
+        display: block;
+        white-space: pre-wrap   
+    }
+}
