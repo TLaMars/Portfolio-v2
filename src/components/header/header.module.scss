@@ -44,7 +44,7 @@
 
     h1 {
         @apply text-4xl;
-        @apply font-extrabold;
+        @apply font-black;
         @apply mb-5;
 
         @screen md {
@@ -52,8 +52,7 @@
         }
     }
 
-    h3 {
-        @apply text-2xl;
+    h4 {
         @apply font-bold;
         width: 320px;
     }

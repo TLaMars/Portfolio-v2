@@ -5,7 +5,7 @@ export default function CodeBlock({ code, className }) {
     return (
         <div className={`${style.codeBlock} ${className}`}>
             <code>
-                <span className={style.codeComment}>// My self introduction</span><br />
+                <span>{"//"} My self introduction</span><br />
                 <span className={style.codeConst}>const</span> person = <span>{`{`}</span><br />
                 &nbsp;&nbsp;<span>"FirstName":</span> <span className={style.codeString}>"Thomas"</span>,<br />
                 &nbsp;&nbsp;<span>"LastName":</span> <span className={style.codeString}>"Lamars"</span>,<br />
