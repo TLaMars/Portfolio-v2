@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from '../carousel/carousel';
 import Project from '../project/project';
 import H4 from '../text/h4';
 import H6 from '../text/h6';
@@ -12,30 +13,7 @@ export default function Portfolio() {
                 <H4>The projects I work(ed) on</H4>
 
                 <Project />
-                <div className={style.carousel}>
-                    <div className={style.carousel__item}>
-                        <button className={style.carousel__item__button}>
-                            <span className={style.carousel__item__line}></span>
-                            <span className={style.carousel__item__title}>test</span>
-                        </button>
-                        <button className={style.carousel__item__button}>
-                            <span className={style.carousel__item__line}></span>
-                            <span className={style.carousel__item__title}>test</span>
-                        </button>
-                        <button className={style.carousel__item__button}>
-                            <span className={style.carousel__item__line}></span>
-                            <span className={style.carousel__item__title}>test</span>
-                        </button>
-                        <button className={style.carousel__item__button}>
-                            <span className={style.carousel__item__line}></span>
-                            <span className={style.carousel__item__title}>test</span>
-                        </button>
-                    </div>
-                    <div className={style.carousel__navigate}>
-                        <button className={style.carousel__navigate__button}></button>
-                        <button className={style.carousel__navigate__button}></button>
-                    </div>
-                </div>
+                <Carousel />
             </div>
         </div>
     );
