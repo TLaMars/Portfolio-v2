@@ -18,7 +18,6 @@
         }
     
         &__line {
-            min-width: 100%;
             height: 6px;
             background: $bgPrimaryColor;
             @apply rounded-full;
@@ -32,7 +31,6 @@
         }
     
         &__title {
-            min-width: 100%;
             @apply text-sm;
             @apply mt-3;
             @apply ml-0.5;
