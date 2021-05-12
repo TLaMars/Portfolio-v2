@@ -12,7 +12,7 @@ export default function Carousel({ projects }) {
     }, [activeIndex, projects, setActiveIndex, setProgress])
 
     const goToPrev = () => {
-        setActiveIndex(activeIndex - 1);
+        setActiveIndex(activeIndex - 1 < 0 ? 0 : activeIndex - 1);
         setProgress(0);
     }
 

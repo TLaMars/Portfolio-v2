@@ -29,6 +29,7 @@
         &__button {
             width: 100%;
             text-align: left;
+            @apply focus:outline-none;
             @apply mx-2;
         }
     
@@ -62,6 +63,7 @@
             height: 40px;
             width: 40px;
             @apply rounded-full;
+            @apply focus:outline-none;
             background-color: $bgPrimaryColor;
         }
 
