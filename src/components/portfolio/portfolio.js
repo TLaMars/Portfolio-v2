@@ -12,7 +12,7 @@ const projects = [
         image: "https://images.ctfassets.net/f8nsofylxdsg/1IzbHoKioDXOqCMzv8fi0S/fa30067d4a580c1be3048166ca639b77/hoewarmishet.png",
         tech: [
             'NextJS',
-            "TailwindCSS",
+            "Tailwind",
             "NodeJS",
             "ReactJS"
         ],
@@ -25,7 +25,7 @@ const projects = [
         image: "https://images.ctfassets.net/f8nsofylxdsg/1IzbHoKioDXOqCMzv8fi0S/fa30067d4a580c1be3048166ca639b77/hoewarmishet.png",
         tech: [
             'NextJS',
-            "TailwindCSS",
+            "Tailwind",
             "NodeJS",
             "ReactJS",
             "JavaScript",
