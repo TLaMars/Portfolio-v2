@@ -8,7 +8,6 @@ import Computer from '../icons/computes';
 
 
 export default function Project({ project }) {
-
     const [description, setDescription] = useState("");
 
     useEffect(() => {
@@ -34,7 +33,7 @@ export default function Project({ project }) {
                         )
                     }
                 </div>
-                <button>View Project</button>
+                <a href={project.viewProject} target="_blank">View Project</a>
             </div>
             <div className={style.project__right}>
                 <Computer image={project.example.file.url}/>
