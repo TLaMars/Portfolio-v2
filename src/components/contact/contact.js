@@ -14,7 +14,7 @@ export default function contact() {
     }
 
     return (
-        <div className={style.contact__wrapper}>
+        <div className={style.contact__wrapper} id="contact">
             <div className={style.contact__inner}>
                 <H6>CONTACT</H6>
                 <H4>Want to drink a digital coffee?</H4>

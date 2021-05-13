@@ -1,0 +1,66 @@
+@import '../../assets/scss/variables.scss';
+
+.navbar {
+    @apply mx-auto;
+    @apply w-full;
+    @apply px-6;
+
+    @screen lg {
+        @apply container;
+    }
+
+    &__flex {
+        @apply flex;
+        @apply items-center;
+        @apply justify-between;
+        @apply py-3;
+        @apply h-24;
+    }
+
+    &__left {
+        @apply z-50;
+    }
+
+    &__right {
+        @apply hidden;
+
+        @screen md {
+            @apply flex;
+            @apply flex-row;
+        }
+
+        &__items {
+            @apply p-0;
+            @apply flex;
+            @apply flex-row;
+            @apply items-end;
+            @apply justify-end;
+            @apply w-full;
+
+            button {
+                @apply inline-block;
+                @apply py-2;
+                @apply mx-2; 
+                @apply font-semibold; 
+                @apply cursor-pointer;
+                @apply transition;
+                @apply duration-300;
+                @apply ease-in-out;
+
+                &:hover {
+                    color: $primaryColor;
+                }
+                
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    svg {
+        width: 50px;
+        height: 60px;
+        @apply my-auto;
+    }
+}

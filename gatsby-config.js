@@ -4,7 +4,8 @@ require("dotenv").config({
 
 module.exports = {
     siteMetadata: {
-        title: "Portfolio",
+        title: "Portfolio - Thomas Lamars",
+        description: "Interested in the work of Thomas Lamars? Just check this portfolio and see what I am up to!"
     },
     plugins: [
         {
@@ -18,5 +19,17 @@ module.exports = {
         "gatsby-plugin-sass",
         "gatsby-plugin-gatsby-cloud",
         "gatsby-plugin-react-helmet",
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Portfolio Thomas Lamars`,
+                short_name: `Portfolio`,
+                start_url: `/`,
+                background_color: `#182225`,
+                theme_color: `#42C789`,
+                display: `standalone`,
+                icon: `src/images/icon.png`,
+            },
+        },
     ],
 };

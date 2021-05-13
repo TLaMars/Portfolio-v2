@@ -34,7 +34,7 @@ export default function Skills({ skills }) {
     }, [skills]);
 
     return (
-        <div className={style.skills}>
+        <div className={style.skills} id="skills">
             <H6>SKILLS</H6>
             <H4>The skills I learned over the years</H4>
 

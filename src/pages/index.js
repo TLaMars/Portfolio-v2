@@ -5,11 +5,15 @@ import Portfolio from '../components/portfolio/portfolio';
 import Skills from '../components/skills/skills';
 import Contact from '../components/contact/contact';
 import Footer from '../components/footer/footer';
+import { Helmet } from 'react-helmet';
 
 export default function Home({ data }) {
     
     return (
         <div>
+            <Helmet>
+                <title>Portfolio - Thomas Lamars</title>
+            </Helmet>
             <Header codeBlocks={data.allContentfulCodeBlock.edges} />
             <Portfolio projects={data.allContentfulProject.edges} />
             <Skills skills={data.allContentfulSkill.edges} />

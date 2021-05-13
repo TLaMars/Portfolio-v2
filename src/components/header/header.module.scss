@@ -1,64 +1,70 @@
 @import '../../assets/scss/variables.scss';
 
 .header {
-    @apply mx-auto;
-    display: flex;
-    flex-direction: column;
     height: 650px;
 
     @screen md {
-        flex-direction: row;
         height: 800px;
     }
 
-    @screen lg {
-        @apply container;
-    }
+    &__intro {
+        @apply mx-auto;
+        display: flex;
+        flex-direction: column;
     
-    &__left {
-        padding-top: 260px;
-
         @screen md {
-            padding-top: 320px;
-            width: 40%;
+            flex-direction: row;
         }
-    }
-
-    &__right {
-        display: none;
-
-        @screen md {
-            padding-top: 200px;
-            display: block;
-            width: 60%;
-        }
-    }
-
-    &__right, &__left {
-        @apply px-6;
-
+    
         @screen lg {
-            width: 50%;
+            @apply container;
         }
-    }
-
-    h1 {
-        @apply text-4xl;
-        @apply font-black;
-        @apply mb-5;
-
-        @screen md {
-            @apply text-5xl;
+        
+        &__left {
+            padding-top: 180px;
+    
+            @screen md {
+                padding-top: 240px;
+                width: 40%;
+            }
         }
-    }
-
-    h4 {
-        @apply font-bold;
-        width: 320px;
-    }
-
-    .green {
-        color: $primaryColor;
+    
+        &__right {
+            display: none;
+    
+            @screen md {
+                padding-top: 120px;
+                display: block;
+                width: 60%;
+            }
+        }
+    
+        &__right, &__left {
+            @apply px-6;
+    
+            @screen lg {
+                width: 50%;
+            }
+        }
+    
+        h1 {
+            @apply text-4xl;
+            @apply font-black;
+            @apply mb-5;
+    
+            @screen md {
+                @apply text-5xl;
+            }
+        }
+    
+        h4 {
+            @apply font-bold;
+            width: 320px;
+        }
+    
+        .green {
+            color: $primaryColor;
+        }
     }
 }
 
