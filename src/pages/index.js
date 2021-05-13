@@ -2,6 +2,9 @@ import React from 'react';
 import { graphql } from 'gatsby'
 import Header from '../components/header/header';
 import Portfolio from '../components/portfolio/portfolio';
+import Skills from '../components/skills/skills';
+import Contact from '../components/contact/contact';
+import Footer from '../components/footer/footer';
 
 export default function Home({ data }) {
     
@@ -9,6 +12,9 @@ export default function Home({ data }) {
         <div>
             <Header codeBlocks={data.allContentfulCodeBlock.edges} />
             <Portfolio projects={data.allContentfulProject.edges} />
+            <Skills skills={data.allContentfulSkill.edges} />
+            <Contact />
+            <Footer />
         </div>
     )
 }
@@ -43,6 +49,14 @@ export const query = graphql`
                     code {
                         raw
                     }
+                }
+            }
+        }
+        allContentfulSkill {
+            edges {
+                node {
+                    name
+                    type
                 }
             }
         }

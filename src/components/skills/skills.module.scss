@@ -1,0 +1,63 @@
+@import '../../assets/scss/variables.scss';
+
+.skills {
+    @apply py-24;
+    @apply px-6;
+    
+    @screen lg {
+        @apply container;
+        @apply mx-auto;
+    }
+
+    h6 {
+        @apply font-black;
+        color: $secondaryColor;
+    }
+
+    &__boxes {
+        display: flex;
+        flex-direction: column;
+        @apply pt-10;
+
+        @screen md {
+            flex-direction: row;
+        }
+    }
+
+    &__box {
+        h6 {
+            @apply mb-4;
+        }
+
+        @apply mb-2.5;
+        width: 100%;
+        
+        @screen md {
+            width: 33.3%;
+        }
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__skill {
+        svg, path {
+            width: 60px;
+            height: 60px;
+            @apply mx-auto;
+            @apply mb-2;
+            color: $secondaryColor;
+        }
+
+        p {
+            width: 100px;
+            text-align: center;
+            color: $textWhite;
+        }
+
+        @apply mb-6;
+    }
+}

@@ -1,20 +1,15 @@
 @import '../../assets/scss/variables.scss';
 
-.portfolio__wrapper {    
+.footer__wrapper {    
     background: $bgSecondaryColor;
 }
 
-.portfolio__inner {
-    @apply py-24;
+.footer__inner {
+    @apply pb-8;
     @apply px-6;
     
     @screen lg {
         @apply container;
         @apply mx-auto;
-    }
-
-    h6 {
-        @apply font-black;
-        color: $secondaryColor;
     }
 }
