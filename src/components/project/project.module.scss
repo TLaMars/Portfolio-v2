@@ -14,10 +14,9 @@
     }
 
     &__left {
-        height: 450px;
-
         @screen md {
             @apply mr-4;
+            min-height: 450px;
         }
     }
 
