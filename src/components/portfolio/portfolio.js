@@ -6,7 +6,6 @@ import * as style from './portfolio.module.scss';
 
 export default function Portfolio({ projects }) {
 
-    console.log(projects);
     return (
         <div className={style.portfolio__wrapper}>
             <div className={style.portfolio__inner}>

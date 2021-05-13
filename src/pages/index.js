@@ -7,7 +7,7 @@ export default function Home({ data }) {
     
     return (
         <div>
-            <Header />
+            <Header codeBlocks={data.allContentfulCodeBlock.edges} />
             <Portfolio projects={data.allContentfulProject.edges} />
         </div>
     )
@@ -15,7 +15,7 @@ export default function Home({ data }) {
 
 
 export const query = graphql`
-    query Projects {
+    query Portfolio {
         allContentfulProject(sort: {order: ASC, fields: createdAt}) {
             edges {
                 node {
@@ -32,6 +32,16 @@ export const query = graphql`
                         file {
                             url
                         }
+                    }
+                }
+            }
+        }
+        allContentfulCodeBlock {
+            edges {
+                node {
+                    title
+                    code {
+                        raw
                     }
                 }
             }

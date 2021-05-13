@@ -13,19 +13,3 @@
         white-space: pre-wrap   
     }
 }
-
-code {
-    color: $secondaryColor;
-
-    .codeConst {
-        color: $codeVariable;
-    }
-
-    .codeString {
-        color: $codeString;
-    }
-
-    .codeNumber {
-        color: $codeNumber;
-    }
-}

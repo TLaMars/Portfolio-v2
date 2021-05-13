@@ -10,5 +10,20 @@ html, body {
     background: $bgPrimaryColor;
     color: $textWhite;
     font-family: 'Nunito';
+}
 
+code {
+    color: $secondaryColor;
+}
+
+.codeConst {
+    color: $codeVariable;
+}
+
+.codeString {
+    color: $codeString;
+}
+
+.codeNumber {
+    color: $codeNumber;
 }
