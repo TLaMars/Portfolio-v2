@@ -33,7 +33,7 @@ export default function Project({ project }) {
                         )
                     }
                 </div>
-                <a href={project.viewProject} target="_blank">View Project</a>
+                <a href={project.viewProject} target="_blank" rel="noreferrer">View Project</a>
             </div>
             <div className={style.project__right}>
                 <Computer image={project.example.file.url}/>

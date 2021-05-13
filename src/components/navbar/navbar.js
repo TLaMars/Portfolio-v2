@@ -15,9 +15,9 @@ export default function Navbar() {
                 </div>
                 <div className={style.navbar__right}>
                     <div className={style.navbar__right__items}>
-                        <button onClick={() => scrollToSection('portfolio')}>Portfolio</button>
-                        <button onClick={() => scrollToSection('skills')}>Skills</button>
-                        <button onClick={() => scrollToSection('contact')}>Contact</button>
+                        <button aria-label="portfolio" onClick={() => scrollToSection('portfolio')}>Portfolio</button>
+                        <button aria-label="skills" onClick={() => scrollToSection('skills')}>Skills</button>
+                        <button aria-label="contact" onClick={() => scrollToSection('contact')}>Contact</button>
                     </div>
                 </div>
             </div>

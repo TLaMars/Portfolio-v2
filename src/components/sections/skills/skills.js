@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Icons from '../icons/icons';
-import H4 from '../text/h4';
-import H6 from '../text/h6';
+import Icons from '../../icons/icons';
+import H4 from '../../text/h4';
+import H6 from '../../text/h6';
 import * as style from './skills.module.scss';
 
 export default function Skills({ skills }) {
@@ -34,7 +34,7 @@ export default function Skills({ skills }) {
     }, [skills]);
 
     return (
-        <div className={style.skills} id="skills">
+        <section className={style.skills} id="skills">
             <H6>SKILLS</H6>
             <H4>The skills I learned over the years</H4>
 
@@ -73,6 +73,6 @@ export default function Skills({ skills }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

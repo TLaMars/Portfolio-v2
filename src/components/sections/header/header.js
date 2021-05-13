@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import CodeBlock from '../codeBlock/codeBlock';
-import Navbar from '../navbar/navbar';
-import H1 from '../text/h1';
-import H4 from '../text/h4';
+import CodeBlock from '../../codeBlock/codeBlock';
+import Navbar from '../../navbar/navbar';
+import H1 from '../../text/h1';
+import H4 from '../../text/h4';
 import * as style from './header.module.scss';
 
 export default function Header({ codeBlocks }) {
@@ -23,7 +23,7 @@ export default function Header({ codeBlocks }) {
     }, [codeBlocks])
 
     return (
-        <div className={style.header}>
+        <section className={style.header}>
             <Navbar />
             <div className={style.header__intro}>
                 <div className={style.header__intro__left}>
@@ -35,6 +35,6 @@ export default function Header({ codeBlocks }) {
                     <CodeBlock code={liveCB} className={style.codeBlocks__floater} />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

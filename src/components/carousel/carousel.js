@@ -41,14 +41,13 @@ export default function Carousel({ projects }) {
 
     return (
         <div>
-        
             <Project project={projects[activeIndex].node} />
 
             <div className={style.carousel}>
                 <div className={style.carousel__items}>
                     { 
                         projects.map((project, id) => 
-                            <button className={style.carousel__item__button} key={id} onClick={() => goToThisProject(id)}>
+                            <button aria-label={project.title} className={style.carousel__item__button} key={id} onClick={() => goToThisProject(id)}>
                                 <span className={style.carousel__item__line}>
                                     { (activeIndex === id) && <span className={style.carousel__item__line__progress} style={{ width: progress + '%' }}></span> }
                                 </span>
@@ -58,8 +57,8 @@ export default function Carousel({ projects }) {
                     }
                 </div>
                 <div className={style.carousel__navigate}>
-                    <button onClick={goToPrev} className={style.carousel__navigate__button}><ArrowLeft /></button>
-                    <button onClick={goToNext} className={style.carousel__navigate__button}><ArrowRight /></button>
+                    <button aria-label="previous" onClick={goToPrev} className={style.carousel__navigate__button}><ArrowLeft /></button>
+                    <button aria-label="next" onClick={goToNext} className={style.carousel__navigate__button}><ArrowRight /></button>
                 </div>
             </div>
         </div>

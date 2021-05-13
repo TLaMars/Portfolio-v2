@@ -1,7 +1,7 @@
 import React from 'react';
 import { SiLinkedin, SiMailDotRu } from 'react-icons/si';
-import H4 from '../text/h4';
-import H6 from '../text/h6';
+import H4 from '../../text/h4';
+import H6 from '../../text/h6';
 import * as style from './contact.module.scss';
 
 export default function contact() {
@@ -14,22 +14,22 @@ export default function contact() {
     }
 
     return (
-        <div className={style.contact__wrapper} id="contact">
+        <section className={style.contact__wrapper} id="contact">
             <div className={style.contact__inner}>
                 <H6>CONTACT</H6>
                 <H4>Want to drink a digital coffee?</H4>
 
                 <div className={style.contact__inner__socials}>
-                    <button className={style.contact__inner__social} onClick={openMail}>
+                    <button aria-label='mail' className={style.contact__inner__social} onClick={openMail}>
                         <SiMailDotRu />
                         <p>Mail</p>
                     </button>
-                    <button className={style.contact__inner__social} onClick={openLinkedIn}>
+                    <button aria-label='linkedin' className={style.contact__inner__social} onClick={openLinkedIn}>
                         <SiLinkedin />
                         <p>LinkedIn</p>
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
