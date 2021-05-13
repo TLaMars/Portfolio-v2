@@ -27,6 +27,22 @@
                 padding-top: 240px;
                 width: 40%;
             }
+
+            button {
+                display: inline-flex;
+                @apply mt-5;
+                svg {
+                    @apply mr-2;
+                }
+
+                &:hover {
+                    color: $primaryColor;
+                }
+
+                @apply transition;
+                @apply duration-500;
+                @apply ease-in-out;
+            }
         }
     
         &__right {

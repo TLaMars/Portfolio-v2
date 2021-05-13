@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CodeBlock from '../../codeBlock/codeBlock';
+import ArrowDown from '../../icons/arrowDown';
 import Navbar from '../../navbar/navbar';
 import H1 from '../../text/h1';
 import H4 from '../../text/h4';
@@ -9,6 +10,10 @@ export default function Header({ codeBlocks }) {
 
     const [introductionCB, setIntroductionCB] = useState(null);
     const [liveCB, setLiveCB] = useState(null);
+
+    const goToProjects = () => {
+        document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+    }
 
     useEffect(() => {
         codeBlocks.forEach((block) => {
@@ -29,6 +34,9 @@ export default function Header({ codeBlocks }) {
                 <div className={style.header__intro__left}>
                     <H1>Hi!, I am <span className={style.green}>Thomas</span>,</H1>
                     <H4>A 21 year old <span className={style.green}>front-end</span> and <span className={style.green}>back-end</span> developer from The Netherlands.</H4>
+                    <button onClick={goToProjects} aria-label="Go to portfolio">
+                        <ArrowDown /> See my Portfolio
+                    </button>
                 </div>
                 <div className={style.header__intro__right}>
                     <CodeBlock code={introductionCB} />
