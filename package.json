@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@iconify-icons/simple-icons": "^1.1.24",
     "gatsby": "^3.4.1",
     "gatsby-plugin-gatsby-cloud": "^2.4.1",
     "gatsby-plugin-image": "^1.4.1",
@@ -24,9 +25,11 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
     "sass": "^1.32.12"
   },
   "devDependencies": {
+    "@iconify/react": "^1.1.4",
     "autoprefixer": "^10.2.5",
     "gatsby-plugin-postcss": "^4.4.0",
     "postcss": "^8.2.14",
