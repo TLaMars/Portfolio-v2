@@ -22,16 +22,19 @@
     }
 
     &__right {
-        @apply hidden;
-
         @screen md {
             @apply flex;
             @apply flex-row;
         }
 
         &__items {
+            @apply hidden;
+
+            @screen md {
+                @apply flex;
+            }
+
             @apply p-0;
-            @apply flex;
             @apply flex-row;
             @apply items-end;
             @apply justify-end;
@@ -62,5 +65,23 @@
         width: 50px;
         height: 60px;
         @apply my-auto;
+    }
+
+    &__langSwitch {
+        @apply ml-4;
+        @apply rounded-full;
+        @apply my-auto;
+        display: inline-flex;
+
+        height: 26px;
+
+        a {
+            height: 26px;
+        }
+
+        svg {
+            height: 26px;
+            width: 26px;
+        }
     }
 }

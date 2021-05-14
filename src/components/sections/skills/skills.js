@@ -4,7 +4,7 @@ import H4 from '../../text/h4';
 import H6 from '../../text/h6';
 import * as style from './skills.module.scss';
 
-export default function Skills({ skills }) {
+export default function Skills({ data }) {
 
     const [frontend, setFrontend] = useState([]);
     const [backend, setBackend] = useState([]);
@@ -12,16 +12,16 @@ export default function Skills({ skills }) {
 
     useEffect(() => {
         let frontend = [], backend = [], tools = [];
-        skills.forEach((skill) => {
-            switch(skill.node.type) {
+        data.skills.forEach((skill) => {
+            switch(skill.type) {
                 case 'Frontend':
-                    frontend.push(skill.node.name);
+                    frontend.push(skill.name);
                     break;
                 case 'Backend':
-                    backend.push(skill.node.name);
+                    backend.push(skill.name);
                     break;
                 case 'Tool':
-                    tools.push(skill.node.name);
+                    tools.push(skill.name);
                     break;
                 default:
                     break;
@@ -31,12 +31,12 @@ export default function Skills({ skills }) {
         setFrontend(frontend);
         setBackend(backend);
         setTools(tools);
-    }, [skills]);
+    }, [data]);
 
     return (
         <section className={style.skills} id="skills">
-            <H6>SKILLS</H6>
-            <H4>The skills I learned over the years</H4>
+            <H6>{ data.title }</H6>
+            <H4>{ data.subTitle }</H4>
 
             <div className={style.skills__boxes}>
                 <div className={style.skills__box}>

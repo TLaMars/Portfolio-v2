@@ -41,17 +41,18 @@ export default function Carousel({ projects }) {
 
     return (
         <div>
-            <Project project={projects[activeIndex].node} />
+            <Project project={projects[activeIndex]} />
 
             <div className={style.carousel}>
                 <div className={style.carousel__items}>
                     { 
                         projects.map((project, id) => 
+
                             <button aria-label={project.title} className={style.carousel__item__button} key={id} onClick={() => goToThisProject(id)}>
                                 <span className={style.carousel__item__line}>
                                     { (activeIndex === id) && <span className={style.carousel__item__line__progress} style={{ width: progress + '%' }}></span> }
                                 </span>
-                                <span className={style.carousel__item__title}>{ project.node.title }</span>
+                                <span className={style.carousel__item__title}>{ project.title }</span>
                             </button>
                         )
                     }

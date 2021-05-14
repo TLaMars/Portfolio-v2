@@ -18,10 +18,10 @@ function Home({ data, intl }) {
                 <meta name="title" content={data.site.siteMetadata.title} />
                 <meta name="description" content={data.site.siteMetadata.description} />
             </Helmet>
-            <Header codeBlocks={data.allContentfulCodeBlock.edges} />
-            <Portfolio projects={data.allContentfulProject.edges} />
-            <Skills skills={data.allContentfulSkill.edges} />
-            <Contact />
+            <Header data={data.allContentfulHomePageHeader.edges[0].node} />
+            <Portfolio data={data.allContentfulHomePageProjects.edges[0].node} />
+            <Skills data={data.allContentfulHomePageSkills.edges[0].node} />
+            <Contact data={data.allContentfulHomePageContact.edges[0].node} />
             <Footer />
         </div>
     )
@@ -29,42 +29,67 @@ function Home({ data, intl }) {
 
 
 export const query = graphql`
-    query Portfolio($locale: String) {
-        allContentfulProject(filter: {node_locale: {eq: $locale}}) {
+    query Projects($locale: String) {
+        allContentfulHomePageContact(filter: {node_locale: {eq: $locale}}) {
             edges {
                 node {
-                    description {
-                        description
-                    }
-                    usedTechnics
-                    viewProject
-                    type
+                    subTitle
                     title
-                    createdAt
-                    example {
+                    socials {
+                        icon
                         title
-                        file {
-                            url
+                        url
+                    }
+                }
+            }
+        }
+        allContentfulHomePageHeader(filter: {node_locale: {eq: $locale}}) {
+            edges {
+                node {
+                    subTitle
+                    title
+                    buttonText
+                    codeBlocks {
+                        title
+                        code {
+                        raw
                         }
                     }
                 }
             }
         }
-        allContentfulCodeBlock(filter: { node_locale: { eq: $locale } }) {
+        allContentfulHomePageProjects(filter: {node_locale: {eq: $locale}}) {
             edges {
                 node {
+                    subTitle
                     title
-                    code {
-                        raw
+                    projects {
+                        example {
+                            file {
+                                url
+                                fileName
+                            }
+                        }
+                        description {
+                            description
+                        }
+                        title
+                        type
+                        viewProject
+                        usedTechnics
                     }
                 }
             }
         }
-        allContentfulSkill(filter: { node_locale: { eq: $locale } }) {
+        allContentfulHomePageSkills(filter: {node_locale: {eq: $locale}}) {
             edges {
                 node {
-                    name
-                    type
+                    subTitle
+                    title
+                    skills {
+                        name
+                        type
+                    }
                 }
             }
         }
