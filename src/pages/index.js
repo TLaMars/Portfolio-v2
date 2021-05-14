@@ -7,8 +7,10 @@ import Contact from '../components/sections/contact/contact';
 import Footer from '../components/sections/footer/footer';
 import { Helmet } from 'react-helmet';
 
-export default function Home({ data }) {
-    
+import { injectIntl } from "gatsby-plugin-intl"
+
+
+function Home({ data, intl }) {
     return (
         <div>
             <Helmet>
@@ -27,12 +29,12 @@ export default function Home({ data }) {
 
 
 export const query = graphql`
-    query Portfolio {
-        allContentfulProject(sort: {order: ASC, fields: createdAt}) {
+    query Portfolio($locale: String) {
+        allContentfulProject(filter: {node_locale: {eq: $locale}}) {
             edges {
                 node {
                     description {
-                        raw
+                        description
                     }
                     usedTechnics
                     viewProject
@@ -48,7 +50,7 @@ export const query = graphql`
                 }
             }
         }
-        allContentfulCodeBlock {
+        allContentfulCodeBlock(filter: { node_locale: { eq: $locale } }) {
             edges {
                 node {
                     title
@@ -58,7 +60,7 @@ export const query = graphql`
                 }
             }
         }
-        allContentfulSkill {
+        allContentfulSkill(filter: { node_locale: { eq: $locale } }) {
             edges {
                 node {
                     name
@@ -74,3 +76,5 @@ export const query = graphql`
         }
     }
 `
+
+export default injectIntl(Home);
