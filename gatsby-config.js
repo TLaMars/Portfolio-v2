@@ -16,11 +16,19 @@ module.exports = {
                 spaceId: process.env.CONTENTFUL_SPACE_ID,
             },
         },
-        'gatsby-plugin-robots-txt',
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                host: "https://thomaur.dev",
+                sitemap: null,
+                policy: [{ userAgent: '*', allow: '/' }]
+            }
+        },
         "gatsby-plugin-postcss",
         "gatsby-plugin-sass",
         "gatsby-plugin-gatsby-cloud",
         "gatsby-plugin-react-helmet",
+        "gatsby-plugin-sitemap",
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
