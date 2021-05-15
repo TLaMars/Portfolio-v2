@@ -33,7 +33,7 @@ function Header({ data, intl }) {
                             &nbsp;&nbsp;<span>"{ intl.formatMessage({ id: "introduction.country" }) }":</span> <span className='codeString'>"{ intl.formatMessage({ id: "introduction.values.country" }) }"</span><br />
                             <span>{`}`}</span>
                         </CodeBlock>
-                        <CodeBlock className={style.codeBlocks__floater} delay={2000}>
+                        <CodeBlock className={style.codeBlocks__floater} delay={10000}>
                             <span>{ intl.formatMessage({ id: "aboutMe.comment" }) }</span><br />
                             <span class="codeConst">const</span> { intl.formatMessage({ id: "aboutMe.variable" }) } = <span>{`{`}</span><br />
                             &nbsp;&nbsp;<span>"{ intl.formatMessage({ id: "aboutMe.profession" }) }"</span>: <span class="codeString">"{ intl.formatMessage({ id: "aboutMe.values.profession" }) }"</span>,<br />
