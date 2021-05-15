@@ -43,40 +43,34 @@ export default function Skills({ data }) {
                 <div className={style.skills__box}>
                     <H6>Front-end</H6>
                     <div className={style.skills__group}>
-                        {/* <Fade direction="up" cascade duration={500}> */}
-                            { frontend.map((skill) => 
-                                <div className={style.skills__skill} key={skill}>
-                                    <Icons iconName={skill} />
-                                    <p>{skill}</p>
-                                </div>
-                            )}
-                        {/* </Fade> */}
+                        { frontend.map((skill) => 
+                            <div className={style.skills__skill} key={skill}>
+                                <Icons iconName={skill} />
+                                <p>{skill}</p>
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className={style.skills__box}>
                     <H6>Back-end</H6>
                     <div className={style.skills__group}>
-                        {/* <Fade direction="up" cascade duration={500}> */}
                         { backend.map((skill) => 
                             <div className={style.skills__skill} key={skill}>
                                 <Icons iconName={skill} />
                                 <p>{skill}</p>
                             </div>
                         )}
-                        {/* </Fade> */}
                     </div>
                 </div>
                 <div className={style.skills__box}>
                     <H6>Tools</H6>
                     <div className={style.skills__group}>
-                        {/* <Fade direction="up" cascade duration={500}> */}
                         { tools.map((skill) => 
                             <div className={style.skills__skill} key={skill}>
                                 <Icons iconName={skill} />
                                 <p>{skill}</p>
                             </div>
                         )}
-                        {/* </Fade> */}
                     </div>
                 </div>
             </div>
