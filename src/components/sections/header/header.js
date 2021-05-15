@@ -5,6 +5,7 @@ import Navbar from '../../navbar/navbar';
 import H1 from '../../text/h1';
 import H4 from '../../text/h4';
 import * as style from './header.module.scss';
+import { Slide } from 'react-awesome-reveal';
 
 export default function Header({ data }) {
     const [introductionCB, setIntroductionCB] = useState(null);
@@ -31,15 +32,19 @@ export default function Header({ data }) {
             <Navbar />
             <div className={style.header__intro}>
                 <div className={style.header__intro__left}>
-                    <H1>{ data.title }</H1>
-                    <H4>{ data.subTitle }</H4>
-                    <button onClick={goToProjects} aria-label="Go to portfolio">
-                        <ArrowDown /> { data.buttonText }
-                    </button>
+                    <Slide direction="up" triggerOnce>
+                        <H1>{ data.title }</H1>
+                        <H4>{ data.subTitle }</H4>
+                        <button onClick={goToProjects} aria-label="Go to portfolio">
+                            <ArrowDown /> { data.buttonText }
+                        </button>
+                        </Slide>
                 </div>
                 <div className={style.header__intro__right}>
-                    <CodeBlock code={introductionCB} />
-                    <CodeBlock code={liveCB} className={style.codeBlocks__floater} />
+                    <Slide direction="up"  triggerOnce>
+                        <CodeBlock code={introductionCB} />
+                        <CodeBlock code={liveCB} className={style.codeBlocks__floater} />
+                    </Slide>
                 </div>
             </div>
         </section>
