@@ -18,7 +18,7 @@ function Home({ data, intl }) {
                 <meta name="title" content={data.site.siteMetadata.title} />
                 <meta name="description" content={data.site.siteMetadata.description} />
             </Helmet>
-            <Header data={data.allContentfulHomePageHeader.edges[0].node} />
+            <Header />
             <Portfolio data={data.allContentfulHomePageProjects.edges[0].node} />
             <Skills data={data.allContentfulHomePageSkills.edges[0].node} />
             <Contact data={data.allContentfulHomePageContact.edges[0].node} />
@@ -40,15 +40,6 @@ export const query = graphql`
                         title
                         url
                     }
-                }
-            }
-        }
-        allContentfulHomePageHeader(filter: {node_locale: {eq: $locale}}) {
-            edges {
-                node {
-                    subTitle
-                    title
-                    buttonText
                 }
             }
         }

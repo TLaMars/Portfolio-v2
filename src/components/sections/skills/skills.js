@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Icons from '../../icons/icons';
-import H4 from '../../text/h4';
-import H6 from '../../text/h6';
 import * as style from './skills.module.scss';
-// import { Fade } from 'react-awesome-reveal';
 
 export default function Skills({ data }) {
 
@@ -36,12 +33,12 @@ export default function Skills({ data }) {
 
     return (
         <section className={style.skills} id="skills">
-            <H6>{ data.title }</H6>
-            <H4>{ data.subTitle }</H4>
+            <h3 className="h6">{ data.title }</h3>
+            <h4 className="h4">{ data.subTitle }</h4>
 
             <div className={style.skills__boxes}>
                 <div className={style.skills__box}>
-                    <H6>Front-end</H6>
+                    <h5 className="h6">Front-end</h5>
                     <div className={style.skills__group}>
                         { frontend.map((skill) => 
                             <div className={style.skills__skill} key={skill}>
@@ -52,7 +49,7 @@ export default function Skills({ data }) {
                     </div>
                 </div>
                 <div className={style.skills__box}>
-                    <H6>Back-end</H6>
+                    <h5 className="h6">Back-end</h5>
                     <div className={style.skills__group}>
                         { backend.map((skill) => 
                             <div className={style.skills__skill} key={skill}>
@@ -63,7 +60,7 @@ export default function Skills({ data }) {
                     </div>
                 </div>
                 <div className={style.skills__box}>
-                    <H6>Tools</H6>
+                    <h5 className="h6">Tools</h5>
                     <div className={style.skills__group}>
                         { tools.map((skill) => 
                             <div className={style.skills__skill} key={skill}>

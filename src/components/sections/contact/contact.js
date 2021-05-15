@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { SiLinkedin, SiMailDotRu } from 'react-icons/si';
-import H4 from '../../text/h4';
-import H6 from '../../text/h6';
 import * as style from './contact.module.scss';
 
 export default function Contact({ data }) {
@@ -25,8 +23,8 @@ export default function Contact({ data }) {
     return (
         <section className={style.contact__wrapper} id="contact">
             <div className={style.contact__inner}>
-                <H6>{ data.title }</H6>
-                <H4>{ data.subTitle }</H4>
+                <h3 className="h6">{ data.title }</h3>
+                <h4 className="h4">{ data.subTitle }</h4>
 
                 <div className={style.contact__inner__socials}>
                     <button aria-label='mail' className={style.contact__inner__social} onClick={openMail}>

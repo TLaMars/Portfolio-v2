@@ -1,6 +1,4 @@
 import React from 'react';
-import H5 from '../text/h5';
-import H3 from '../text/h3';
 import * as style from './project.module.scss';
 import Icons from '../icons/icons';
 import Computer from '../icons/computes';
@@ -11,8 +9,8 @@ export default function Project({ project }) {
     return (
         <div className={style.project}>
             <div className={style.project__left}>
-                <H3>{ project.title }</H3>
-                <H5>{ project.type }</H5>
+                <h5 className="h3">{ project.title }</h5>
+                <h6 className="h5">{ project.type }</h6>
                 <p>
                     { project.description.description }
                 </p>

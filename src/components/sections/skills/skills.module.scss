@@ -9,7 +9,7 @@
         @apply mx-auto;
     }
 
-    h6 {
+    h3, h5 {
         @apply font-black;
         color: $secondaryColor;
     }
@@ -25,7 +25,7 @@
     }
 
     &__box {
-        h6 {
+        h5 {
             @apply mb-4;
         }
 

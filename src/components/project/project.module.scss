@@ -40,12 +40,6 @@
         @apply font-bold;
     }
 
-    h5 {
-        color: $primaryColor;
-        @apply font-black;
-        @apply pb-4;
-    }
-
     @screen md {
         flex-direction: row;
     }

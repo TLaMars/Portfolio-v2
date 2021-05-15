@@ -27,3 +27,40 @@ code {
 .codeNumber {
     color: $codeNumber;
 }
+
+.h1 {
+    @apply text-4xl;
+    @apply font-bold;
+
+    @screen md {
+        @apply text-5xl;
+    }
+}
+
+.h2 {
+    @apply text-4xl;
+    @apply font-bold;
+}
+
+.h3 {
+    @apply text-3xl;
+    @apply font-bold;
+}
+
+.h4 {
+    @apply text-2xl;
+    @apply font-bold;
+}
+
+.h5 {
+    @apply text-xl;
+    @apply font-bold;
+    color: $primaryColor;
+    @apply font-black;
+    @apply pb-4;
+}
+
+.h6 {
+    @apply text-lg;
+    @apply font-bold;
+}
