@@ -1,3 +1,63 @@
 {
-    "title": "Welcome"
+    "name": "Thomas",
+    "header": {
+        "title": "Hi!, I am ",
+        "subTitle_prefix": "A 21 year old ",
+        "subTitle_profession_1": "frontend ",
+        "subTitle_infix": "and ",
+        "subTitle_profession_2": "backend ",
+        "subTitle_suffix": "developer from The Netherlands",
+        "buttonText": "See my Portfolio"
+    },
+    "portofolio": {
+        "title": "PORTFOLIO",
+        "subTitle": "The projects I work(ed) on",
+        "button": "View Project"
+    },
+    "skills": {
+        "title": "SKILLS",
+        "subTitle": "The skills I learned over the years",
+        "frontEnd": "Frontend",
+        "backEnd": "Backend",
+        "tools": "Tools"
+    },
+    "contact": {
+        "title": "CONTACT",
+        "subTitle": "Want to drink a digital coffee?",
+        "mail": "Mail",
+        "linkedIn": "LinkedIn"
+    },
+    "footer": {
+        "copyright": "Created by Thomas Lamars"
+    },
+    "introduction": {
+        "variable": "person",
+        "comment": "// My self introduction",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "age": "Age",
+        "country": "Country",
+        "values": {
+            "firstName": "Thomas",
+            "lastName": "Lamars",
+            "age": 21,
+            "country": "Holland"
+        }
+    },
+    "aboutMe": {
+        "variable": "life",
+        "comment": "// About me",
+        "profession": "Profession",
+        "brain": "Brain",
+        "hobbies": "Hobbies",
+        "values": {
+            "profession": "Developer",
+            "brain": "Learning new things",
+            "hobbies": {
+                "1": "Baskerbal",
+                "2": "Developing",
+                "3": "Gaming"
+            }
+        }
+    }
 }

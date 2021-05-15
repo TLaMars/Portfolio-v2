@@ -49,12 +49,6 @@ export const query = graphql`
                     subTitle
                     title
                     buttonText
-                    codeBlocks {
-                        title
-                        code {
-                        raw
-                        }
-                    }
                 }
             }
         }

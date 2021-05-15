@@ -1,3 +1,62 @@
 {
-    "title": "Welkom"
+    "header": {
+        "title": "Hi!, Ik ben ",
+        "subTitle_prefix": "Een 21 jarige ",
+        "subTitle_profession_1": "frontend ",
+        "subTitle_infix": "en ",
+        "subTitle_profession_2": "backend ",
+        "subTitle_suffix": "developer uit Nederland",
+        "buttonText": "Zie mijn Portfolio"
+    },
+    "portofolio": {
+        "title": "PORTFOLIO",
+        "subTitle": "De projecten waar aan ik werk",
+        "button": "Bekijk Project"
+    },
+    "skills": {
+        "title": "SKILLS",
+        "subTitle": "De vaardigheden die ik heb geleerd",
+        "frontEnd": "Frontend",
+        "backEnd": "Backend",
+        "tools": "Tools"
+    },
+    "contact": {
+        "title": "CONTACT",
+        "subTitle": "Een digitale koffie drinken?",
+        "mail": "Email",
+        "linkedIn": "LinkedIn"
+    },
+    "footer": {
+        "copyright": "Gemaakt door Thomas Lamars"
+    },
+    "introduction": {
+        "variable": "persoon",
+        "comment": "// Mijn introductie",
+        "firstName": "Voornaam",
+        "lastName": "Achternaam",
+        "age": "Leeftijd",
+        "country": "Land",
+        "values": {
+            "firstName": "Thomas",
+            "lastName": "Lamars",
+            "age": 21,
+            "country": "Nederland"
+        }
+    },
+    "aboutMe": {
+        "variable": "leven",
+        "comment": "// Over mij",
+        "profession": "Beroep",
+        "brain": "Brein",
+        "hobbies": "Hobbies",
+        "values": {
+            "profession": "Developer",
+            "brain": "Nieuwe dingen leren",
+            "hobbies": {
+                "1": "Basketbal",
+                "2": "Ontwikkelen",
+                "3": "Gamen"
+            }
+        }
+    }
 }
