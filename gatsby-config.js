@@ -5,7 +5,8 @@ require("dotenv").config({
 module.exports = {
     siteMetadata: {
         title: "Portfolio - Thomas Lamars",
-        description: "Interested in the work of Thomas Lamars? Just check this portfolio and see what I am up to!"
+        description: "Interested in the work of Thomas Lamars? Just check this portfolio and see what I am up to!",
+        siteUrl: "https://thomaur.dev"
     },
     plugins: [
         {
@@ -15,6 +16,7 @@ module.exports = {
                 spaceId: process.env.CONTENTFUL_SPACE_ID,
             },
         },
+        'gatsby-plugin-robots-txt',
         "gatsby-plugin-postcss",
         "gatsby-plugin-sass",
         "gatsby-plugin-gatsby-cloud",
