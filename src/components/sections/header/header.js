@@ -5,7 +5,7 @@ import Navbar from '../../navbar/navbar';
 import H1 from '../../text/h1';
 import H4 from '../../text/h4';
 import * as style from './header.module.scss';
-import { Fade } from 'react-awesome-reveal';
+// import { Fade } from 'react-awesome-reveal';
 import { injectIntl } from 'gatsby-plugin-intl';
 
 function Header({ data, intl }) {
@@ -18,16 +18,16 @@ function Header({ data, intl }) {
             <Navbar />
             <div className={style.header__intro}>
                 <div className={style.header__intro__left}>
-                    <Fade direction="up" cascade duration={500}>
+                    {/* <Fade direction="up" cascade duration={500}> */}
                         <H1>{ data.title } <span className={style.green}>Thomas</span></H1>
                         <H4>{ data.subTitle }</H4>
                         <button onClick={goToProjects} aria-label="Go to portfolio">
                             <ArrowDown /> { data.buttonText }
                         </button>
-                    </Fade>
+                    {/* </Fade> */}
                 </div>
                 <div className={style.header__intro__right}>
-                    <Fade direction="up" cascade>
+                    {/* <Fade direction="up" cascade> */}
                             <CodeBlock>
                                 <span>{ intl.formatMessage({ id: "introduction.comment" }) }</span><br />
                                 <span className='codeConst'>const</span> { intl.formatMessage({ id: "introduction.variable" }) } = <span>{`{`}</span><br />
@@ -46,7 +46,7 @@ function Header({ data, intl }) {
                                 &nbsp;&nbsp;&nbsp;&nbsp;<span class="codeString">"{ intl.formatMessage({ id: "aboutMe.values.hobbies.2" }) }"</span>, <span class="codeString">"{ intl.formatMessage({ id: "aboutMe.values.hobbies.3" }) }"</span> <span>]</span><br />
                                 <span>{`}`}</span>
                             </CodeBlock>
-                    </Fade>
+                    {/* </Fade> */}
                 </div>
             </div>
         </section>
