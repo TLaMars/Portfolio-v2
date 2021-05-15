@@ -3,6 +3,7 @@ import Icons from '../../icons/icons';
 import H4 from '../../text/h4';
 import H6 from '../../text/h6';
 import * as style from './skills.module.scss';
+import { Fade } from 'react-awesome-reveal';
 
 export default function Skills({ data }) {
 
@@ -42,34 +43,40 @@ export default function Skills({ data }) {
                 <div className={style.skills__box}>
                     <H6>Front-end</H6>
                     <div className={style.skills__group}>
-                        { frontend.map((skill) => 
-                            <div className={style.skills__skill} key={skill}>
-                                <Icons iconName={skill} />
-                                <p>{skill}</p>
-                            </div>
-                        )}
+                        <Fade direction="up" cascade duration={500}>
+                            { frontend.map((skill) => 
+                                <div className={style.skills__skill} key={skill}>
+                                    <Icons iconName={skill} />
+                                    <p>{skill}</p>
+                                </div>
+                            )}
+                        </Fade>
                     </div>
                 </div>
                 <div className={style.skills__box}>
                     <H6>Back-end</H6>
                     <div className={style.skills__group}>
+                        <Fade direction="up" cascade duration={500}>
                         { backend.map((skill) => 
                             <div className={style.skills__skill} key={skill}>
                                 <Icons iconName={skill} />
                                 <p>{skill}</p>
                             </div>
                         )}
+                        </Fade>
                     </div>
                 </div>
                 <div className={style.skills__box}>
                     <H6>Tools</H6>
                     <div className={style.skills__group}>
+                        <Fade direction="up" cascade duration={500}>
                         { tools.map((skill) => 
                             <div className={style.skills__skill} key={skill}>
                                 <Icons iconName={skill} />
                                 <p>{skill}</p>
                             </div>
                         )}
+                        </Fade>
                     </div>
                 </div>
             </div>
