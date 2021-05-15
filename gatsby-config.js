@@ -20,7 +20,7 @@ module.exports = {
             resolve: 'gatsby-plugin-robots-txt',
             options: {
                 host: "https://thomaur.dev",
-                sitemap: null,
+                sitemap: "",
                 policy: [{ userAgent: '*', allow: '/' }]
             }
         },
@@ -28,7 +28,6 @@ module.exports = {
         "gatsby-plugin-sass",
         "gatsby-plugin-gatsby-cloud",
         "gatsby-plugin-react-helmet",
-        "gatsby-plugin-sitemap",
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -69,6 +68,7 @@ module.exports = {
                 enterEventName: 'sal:in', // Enter event name
                 exitEventName: 'sal:out', // Exit event name
             }
-        }
+        },
+        "gatsby-plugin-sitemap",
     ],
 };
