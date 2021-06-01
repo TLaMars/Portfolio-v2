@@ -28,19 +28,27 @@
     &__social {
         cursor: pointer;
         width: 100px;
+        color: $secondaryColor;
 
         svg, path {
             width: 60px;
             height: 60px;
             @apply mx-auto;
             @apply mb-2;
-            color: $secondaryColor;
         }
 
         p {
             width: 100px;
             text-align: center;
             color: $textWhite;
+        }
+
+        @apply transition;
+        @apply duration-500;
+        @apply ease-in-out;
+
+        &:hover {
+            color: $primaryColor;
         }
 
         @apply mb-6;

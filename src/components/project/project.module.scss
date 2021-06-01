@@ -47,7 +47,6 @@
     a {
         @apply py-3;
         @apply px-8;
-        @apply mt-2;
         @apply text-sm;
         @apply rounded-lg;
         @apply focus:outline-none;
@@ -67,6 +66,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 400px;
+        margin-bottom: 14px;
         padding-top: 20px;
 
         @apply text-sm;

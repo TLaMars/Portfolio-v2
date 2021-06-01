@@ -33,7 +33,14 @@
         width: 100%;
         
         @screen md {
-            width: 33.3%;
+            width: 32%;
+            &:first-child {
+                margin-right: 3%;
+            }
+
+            &:last-child {
+                margin-left: 3%;
+            }
         }
     }
 
@@ -44,18 +51,27 @@
     }
 
     &__skill {
+        color: $secondaryColor;
+
         svg, path {
             width: 60px;
             height: 60px;
             @apply mx-auto;
             @apply mb-2;
-            color: $secondaryColor;
         }
 
         p {
-            width: 100px;
+            width: 96px;
             text-align: center;
             color: $textWhite;
+        }
+
+        @apply transition;
+        @apply duration-500;
+        @apply ease-in-out;
+
+        &:hover {
+            color: $primaryColor;
         }
 
         @apply mb-6;

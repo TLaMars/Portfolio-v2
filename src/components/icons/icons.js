@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiBootstrap, SiCss3, SiDotNet, SiHtml5, SiJavascript, SiJoomla, SiMicrosoftazure, SiMysql, SiNextDotJs, SiNodeDotJs, SiNuxtDotJs, SiPhp, SiPython, SiReact, SiSass, SiTailwindcss, SiTypescript, SiVueDotJs } from 'react-icons/si';
+import { SiBootstrap, SiCss3, SiDocker, SiDotNet, SiGatsby, SiHtml5, SiJavascript, SiJoomla, SiMicrosoftazure, SiMysql, SiNextDotJs, SiNodeDotJs, SiNuxtDotJs, SiPhp, SiPython, SiReact, SiSass, SiTailwindcss, SiTypescript, SiVueDotJs } from 'react-icons/si';
 import { Icon } from '@iconify/react';
 import nestJs from '@iconify-icons/simple-icons/nestjs';
 
@@ -9,6 +9,8 @@ const icons = (className) => {
         Azure: <SiMicrosoftazure className={className} />,
         Bootstrap: <SiBootstrap className={className} />,
         CSS3: <SiCss3 className={className} />,
+        Docker: <SiDocker className={className} />,
+        Gatsby: <SiGatsby className={className} />,
         HTML5: <SiHtml5 className={className} />,
         JavaScript: <SiJavascript className={className} />,
         Joomla: <SiJoomla className={className} />,

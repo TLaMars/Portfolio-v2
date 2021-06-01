@@ -2,8 +2,6 @@ import React from 'react';
 import * as style from './project.module.scss';
 import Icons from '../icons/icons';
 import Computer from '../icons/computes';
-//import * as icons from 'react-icons/si';
-
 
 export default function Project({ project }) {
     return (
@@ -24,7 +22,7 @@ export default function Project({ project }) {
                         )
                     }
                 </div>
-                <a href={project.viewProject} target="_blank" rel="noreferrer">View Project</a>
+                { project.viewProject && <a href={project.viewProject} target="_blank" rel="noreferrer">View Project</a> }
             </div>
             <div className={style.project__right}>
                 <Computer image={project.example.file.url}/>
