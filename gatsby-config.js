@@ -69,6 +69,21 @@ module.exports = {
                 exitEventName: 'sal:out', // Exit event name
             }
         },
+        {
+            resolve: 'gatsby-plugin-ackee-tracker',
+            options: {
+                // Domatin ID found when adding a domain in the admin panel.
+                domainId: '04a03c75-f751-4825-b466-ba00b82d037c',
+                // URL to Server eg: "https://analytics.test.com".
+                server: 'https://ackee.thomaur.dev',
+                // Disabled analytic tracking when running localy
+                ignoreLocalhost: true,
+                // Enable or disable the tracking of your own visits (as identified by your login to the Ackee dashboard).
+                ignoreOwnVisits: false,
+                // If enabled it will collect info on OS, BrowserInfo, Device  & ScreenSize
+                detailed: true,
+            },
+        },
         "gatsby-plugin-sitemap",
     ],
 };

@@ -1969,6 +1969,13 @@ accepts@^1.3.7, accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
+ackee-tracker@^5:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/ackee-tracker/-/ackee-tracker-5.1.0.tgz#6c41ea5357973347c7c67a26009053bcc0345def"
+  integrity sha512-A7iKkGyUnEXuOzxultQB7hnm4bStYCo1c38MYRRihBfqUP8AImhtZOODb00t9xrXs/BTsg06bz1MKpXeMs9sYw==
+  dependencies:
+    platform "^1.3.6"
+
 acorn-jsx@^5.0.0, acorn-jsx@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.1.tgz#fc8661e11b7ac1539c47dbfea2e72b3af34d267b"
@@ -5153,6 +5160,13 @@ gatsby-page-utils@^1.5.0:
     glob "^7.1.6"
     lodash "^4.17.21"
     micromatch "^4.0.2"
+
+gatsby-plugin-ackee-tracker@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-ackee-tracker/-/gatsby-plugin-ackee-tracker-3.0.0.tgz#d9798c4a61a37a8d044b56cbf8879707462e53d4"
+  integrity sha512-ulwGmw/qznWJWJMCJgvJGH7c2kXlZxhlSSwEEp9U3nQdY40YZ4OANK2c6XLWUV55p9WoilVhxluNLPgUYl6mNg==
+  dependencies:
+    ackee-tracker "^5"
 
 gatsby-plugin-gatsby-cloud@^2.4.1:
   version "2.5.0"
