@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiBootstrap, SiCss3, SiDocker, SiDotNet, SiGatsby, SiHtml5, SiJavascript, SiJoomla, SiMicrosoftazure, SiMysql, SiNextDotJs, SiNodeDotJs, SiNuxtDotJs, SiPhp, SiPython, SiReact, SiSass, SiTailwindcss, SiTypescript, SiVueDotJs } from 'react-icons/si';
+import { SiBootstrap, SiCss3, SiDocker, SiDotNet, SiGatsby, SiHtml5, SiJavascript, SiJoomla, SiMicrosoftazure, SiMysql, SiNextDotJs, SiNodeDotJs, SiNuxtDotJs, SiPhp, SiPython, SiReact, SiSass, SiTailwindcss, SiTypescript, SiVueDotJs, SiSocketdotio } from 'react-icons/si';
 import { Icon } from '@iconify/react';
 import nestJs from '@iconify-icons/simple-icons/nestjs';
 
@@ -23,6 +23,7 @@ const icons = (className) => {
         Python: <SiPython className={className} />,
         ReactJS: <SiReact className={className} />,
         Sass: <SiSass className={className} />,
+        "Socket.IO": <SiSocketdotio className={className} />,
         Tailwind: <SiTailwindcss className={className} />,
         TypeScript: <SiTypescript className={className} />,
         VueJS: <SiVueDotJs className={className} />,
